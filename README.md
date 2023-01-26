@@ -1,36 +1,36 @@
 ```python
 class ReadMe:
-    def __init__(self, username="israelias", year=2020):
+    def __init__(self, username="Angjon", year=2023):
         self.username = username
-        self.name = 'Joem Elias Sanez'
+        self.name = 'Jonas Angulski'
         self.education = {
-            'programming': ['Full Stack Software Development', 'Code Institute'],
-            'architecture': ['Master of Architecture', 'Columbia University'],
-            'art': ['Bachelor of Fine Arts', 'Otis College of Art and Design']
+            'Engineering': ['Mechanical Engineering', 'PUCPR'],
+            'Data Analysis': ['Data Analysis with Python', 'Free Code Camp'],
+            'Machine Learning': ['Machine Learning A-Z', 'Ligency I Team']
         }
         self.employment = {
-            'developer': ['company', 'city'],
-            'architect': ['Foster + Partners', ['Singapore', 'New York']],
-            'designer': ['Herzog & de Meuron', ['New York', 'Basel']]
+            'Trainee': ['Renault do Brasil', 'São José dos Pinhais'],
+            'Engineer Job Rotation': ['Xingyu Automotive Lighting', ['Changzhou', 'China']],
+            'All the above' : ['you': ['projects', 'anywhere']],
         }
 
-    def doing(self, now=2020):
+    def doing(self, now=2023):
         today = self.year
 
         if now < today:
-            experience = self.employment['architect']
+            experience = self.employment['engineer']
             return """
-            I was a design architect with {large_firms} in {big_cities}.
+            I had the opportunity to be part of an intership in {large_firms} in {big_cities}.
             """.format(large_firms=experience[0], big_cities=experience[1])
 
         elif now = today:
-            dream = self.education['programming']
+            dream = self.education['Machine Learning']
             return """
             I am currently learning {code} at {code_institute}.
             """.format(code=dream[0], code_institute=dream[1])
 
         elif now > today:
-            goal = self.employment['developer']
+            goal = self.employment['All the above']
             return """
             I am eager to collaborate with {teams} on {projects}.
             """.format(teams=goal[0], projects='software development')
@@ -43,8 +43,5 @@ class ReadMe:
         opportunity = self.employment
         opportunity[role] = [organization, location]
 
-me = ReadMe(2020)
+me = ReadMe(2023)
 ```
-
----
-⭐️ From [israelias](https://github.com/israelias)
