@@ -4,33 +4,33 @@ class ReadMe:
         self.username = username
         self.name = 'Jonas Angulski'
         self.education = {
-            'Engineering': ['Mechanical Engineering', 'PUCPR'],
-            'Data Analysis': ['Data Analysis with Python', 'Free Code Camp'],
-            'Machine Learning': ['Machine Learning A-Z', 'Ligency I Team']
+            'engineering': ['Mechanical Engineering', 'PUCPR'],
+            'data analysis': ['Data Analysis with Python', 'Free Code Camp'],
+            'machine learning': ['Machine Learning A-Z', 'Ligency I Team']
         }
         self.employment = {
-            'Trainee': ['Renault do Brasil', 'São José dos Pinhais'],
-            'Engineer Job Rotation': ['Xingyu Automotive Lighting', ['Changzhou', 'China']],
-            'All the above' : ['you': ['projects', 'anywhere']],
+            'trainee': ['Renault do Brasil', 'São José dos Pinhais'],
+            'engineer job rotation': ['Xingyu Automotive Lighting', ['Changzhou', 'China']],
+            'all the above' : ['you': ['projects', 'anywhere']],
         }
 
     def doing(self, now=2023):
         today = self.year
 
         if now < today:
-            experience = self.employment['engineer']
+            experience = self.employment['engineer job rotation']
             return """
             I had the opportunity to be part of an intership in {large_firms} in {big_cities}.
             """.format(large_firms=experience[0], big_cities=experience[1])
 
         elif now = today:
-            dream = self.education['Machine Learning']
+            dream = self.education['machine learning']
             return """
             I am currently learning {code} at {code_institute}.
             """.format(code=dream[0], code_institute=dream[1])
 
         elif now > today:
-            goal = self.employment['All the above']
+            goal = self.employment['all the above']
             return """
             I am eager to collaborate with {teams} on {projects}.
             """.format(teams=goal[0], projects='software development')
