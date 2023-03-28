@@ -17,9 +17,9 @@
 
 <br>
 
-- A passionate Self-taught Pyhton developer
+- A passionate Self-taught Python developer
 - Working at personal projects in my spare time
-- Currently learning HTML/CSS by Self
+- Currently learning HTML/CSS by myself
 - Personal website [link](https://jonasangulski.netlify.app/)
 - I’m currently open for an Intern or a new job opportunity
 
