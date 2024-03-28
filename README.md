@@ -20,7 +20,7 @@
 - A passionate Self-taught Python developer
 - Data Analyst and Data Engineer
 - Working at personal projects in my spare time
-- Personal website [link](https://jonasangulski.netlify.app/)
+- [Personal website](https://jonasangulski.netlify.app)
 
 <br><br>
 
